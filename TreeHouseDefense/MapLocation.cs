@@ -1,6 +1,8 @@
-﻿namespace TreeHouseDefense
+﻿using System;
+
+namespace TreeHouseDefense
 {
-    public class MapLocation : Point
+    public class MapLocation: Point  
     {
         public MapLocation(int x, int y,Map map) : base(x,y)
         {
@@ -15,4 +17,5 @@
             return (int)DistanceTo(location) <= range;
         }
     }
+
 }
